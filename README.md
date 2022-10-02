@@ -9,4 +9,7 @@ https://github.com/atomic14/esp32_sdcard_audio/tree/main/arduino-wav-sdcard
 # Introduction
 However, there are some bugs in these links. For example, the API parameters in the code were no longer applicable to the current version of Arduino 1.8.19.
 
+This code shows how to record a WAV file to an SD card by using ESP32.
+
 Hence,I have ried to solve all possible known problems, not only the SD card connection, but also the audio writing problem of our I2S. I hope you can make advantage of this.
+
