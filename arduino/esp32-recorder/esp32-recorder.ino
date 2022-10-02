@@ -5,7 +5,7 @@
 #include <SD.h>
 
 
-//comment the first line and uncomment the second if you use MAX9814
+//comment the first line and uncomment the second if you use analog microphone
 //#define I2S_MODE I2S_MODE_RX
 #define I2S_MODE I2S_MODE_ADC_BUILT_IN
 
