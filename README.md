@@ -26,7 +26,9 @@ Firstly, you should wiring the SD card to the esp32 and make sure the SD card sh
 
 The SD card and its breakout links is below:
 https://www.amazon.com/dp/B08GYKNCCP?psc=1&ref=ppx_yo2ov_dt_b_product_details
+
 https://www.amazon.com/dp/B07PFDFPPC?psc=1&ref=ppx_yo2ov_dt_b_product_details
+
 https://www.amazon.com/dp/B08P517NW5?psc=1&ref=ppx_yo2ov_dt_b_product_details (Do not forget to buy a card reader)
 
 The wiring is same as above links, IO5 - CS; IO23 - MOSI; 5V - VCC; IO19 - MISO; IO18- SCK; GND -GND. 
