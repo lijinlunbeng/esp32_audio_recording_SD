@@ -45,8 +45,8 @@ Secondly, you should read the data from the ADC then using I2S write to the DAM 
 the wiring is same as above linkes, the output of microphone connects to the ESP32 IO35. (You can change to other else just change number of the variable ADC1_CHANNEL_7, ADC1_CHANNEL_7 is IO35).
 
 ### problem
-The latest Arduino version has deleted some APIs ()
+The latest Arduino version has deleted some APIs (Compared to the previous work, the APIs of I2S read and write have already changed).
 
 To solve this problem:
-1. Pleaset read the official document. ![Official Document](https://github.com/lijinlunbeng/esp32_audio_recording_SD/blob/main/images/1.jpg)
+1. Pleaset read the official document. ![Official Document](https://github.com/lijinlunbeng/esp32_audio_recording_SD/blob/main/images/2.png)
 2. I have already changed the code of APIs and their parameters in the code. 
