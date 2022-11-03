@@ -35,6 +35,7 @@ void setup() {
   file.write(header, headerSize);
   I2S_Init(I2S_MODE, I2S_BITS_PER_SAMPLE_32BIT);
   for (int j = 0; j < waveDataSize/numPartWavData; ++j) {
+//    enable and disable ADC to prevent corruption
     I2S_Read(communicationData, numCommunicationData);
     for (int i = 0; i < numCommunicationData/8; ++i) {
       partWavData[2*i] = communicationData[8*i + 2];

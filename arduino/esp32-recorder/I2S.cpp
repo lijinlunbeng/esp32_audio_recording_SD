@@ -8,9 +8,12 @@ void I2S_Init(i2s_mode_t MODE, i2s_bits_per_sample_t BPS)
       .bits_per_sample = BPS,
       .channel_format = I2S_CHANNEL_FMT_RIGHT_LEFT,
       .communication_format = (i2s_comm_format_t)(I2S_COMM_FORMAT_I2S | I2S_COMM_FORMAT_I2S_MSB),
-      .intr_alloc_flags = 0,
+      .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,
       .dma_buf_count = 16,
-      .dma_buf_len = 60
+      .dma_buf_len = 100,
+      .use_apll=false,
+      .tx_desc_auto_clear=false,
+      .fixed_mclk=0
     };
   if (MODE == I2S_MODE_RX || MODE == I2S_MODE_TX) {
     Serial.println("using I2S_MODE");
